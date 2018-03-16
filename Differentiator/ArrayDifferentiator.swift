@@ -1,6 +1,6 @@
 class ArrayDifferentiator {
 //    func callculateChange<T: Equatable>(initial: [T], final: [T]) -> [ArrayDifference] {
-//        var differences = [ArrayDifference]()
+//        var differences = [ArrayDifference]()Element
 //
 //        var notDeleted = [T]()
 //
@@ -17,12 +17,14 @@ class ArrayDifferentiator {
 //        }
 //    }
 
-    func callculateDifference<T: Equatable>(initialValues: [T], finalValues: [T]) {
-        let deletedIndexes = indexesForMissingValues(in: finalValues, comparedTo: initialValues)
-    }
+//    func callculateDifference<T: Equatable>(initialValues: [T], finalValues: [T]) {
+//        let deletedIndexes = indexesForMissingValues(in: finalValues, comparedTo: initialValues)
+//    }
+}
 
-    func indexesForMissingValues<T: Equatable>(in finalValues: [T], comparedTo initialValues: [T]) -> [Int] {
-        var finalValues = finalValues
+extension Array where Element: Equatable {
+    func indexesForMissingValues(comparedTo initialValues: [Element]) -> [Int] {
+        var finalValues = self
 
         return initialValues
             .enumerated()

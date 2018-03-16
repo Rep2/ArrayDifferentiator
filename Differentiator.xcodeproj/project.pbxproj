@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6097DE2205C306000CA3AC3 /* IndexesForMissingValuesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6097DE1205C306000CA3AC3 /* IndexesForMissingValuesTest.swift */; };
+		F6097DE5205C341D00CA3AC3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6097DE4205C341D00CA3AC3 /* Nimble.framework */; };
+		F6097DEA205C380700CA3AC3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6097DE4205C341D00CA3AC3 /* Nimble.framework */; };
 		F61CE611205BDE1D00677786 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
 		F61CE618205BDE1D00677786 /* Differentiator.h in Headers */ = {isa = PBXBuildFile; fileRef = F61CE60A205BDE1C00677786 /* Differentiator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F61CE623205BDE9300677786 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE622205BDE9300677786 /* Identifiable.swift */; };
@@ -24,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F6097DE1205C306000CA3AC3 /* IndexesForMissingValuesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesForMissingValuesTest.swift; sourceTree = "<group>"; };
+		F6097DE4205C341D00CA3AC3 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		F61CE607205BDE1C00677786 /* Differentiator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61CE60A205BDE1C00677786 /* Differentiator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Differentiator.h; sourceTree = "<group>"; };
 		F61CE60B205BDE1C00677786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6097DE5205C341D00CA3AC3 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +52,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61CE611205BDE1D00677786 /* Differentiator.framework in Frameworks */,
+				F6097DEA205C380700CA3AC3 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6097DE3205C341C00CA3AC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6097DE4205C341D00CA3AC3 /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F61CE5FD205BDE1C00677786 = {
 			isa = PBXGroup;
 			children = (
 				F61CE609205BDE1C00677786 /* Differentiator */,
 				F61CE614205BDE1D00677786 /* DifferentiatorTests */,
 				F61CE608205BDE1C00677786 /* Products */,
+				F6097DE3205C341C00CA3AC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F61CE617205BDE1D00677786 /* Info.plist */,
+				F6097DE1205C306000CA3AC3 /* IndexesForMissingValuesTest.swift */,
 			);
 			path = DifferentiatorTests;
 			sourceTree = "<group>";
@@ -112,6 +129,7 @@
 				F61CE604205BDE1C00677786 /* Headers */,
 				F61CE605205BDE1C00677786 /* Resources */,
 				F61CE621205BDE4E00677786 /* Swiftlint */,
+				F6097DE7205C346E00CA3AC3 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -129,6 +147,7 @@
 				F61CE60C205BDE1D00677786 /* Sources */,
 				F61CE60D205BDE1D00677786 /* Frameworks */,
 				F61CE60E205BDE1D00677786 /* Resources */,
+				F6097DE8205C358800CA3AC3 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -157,6 +176,7 @@
 					};
 					F61CE60F205BDE1D00677786 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -197,6 +217,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		F6097DE7205C346E00CA3AC3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		F6097DE8205C358800CA3AC3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		F61CE621205BDE4E00677786 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6097DE2205C306000CA3AC3 /* IndexesForMissingValuesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +417,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Differentiator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -388,6 +445,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Differentiator/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -403,12 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferentiatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,8 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferentiatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorTests";
