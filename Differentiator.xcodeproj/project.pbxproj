@@ -14,6 +14,12 @@
 		F61CE618205BDE1D00677786 /* Differentiator.h in Headers */ = {isa = PBXBuildFile; fileRef = F61CE60A205BDE1C00677786 /* Differentiator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F61CE623205BDE9300677786 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE622205BDE9300677786 /* Identifiable.swift */; };
 		F61CE625205BE8A600677786 /* ArrayDifferentiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */; };
+		F64CCE242061CF5900B38BD0 /* CalculateDifferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */; };
+		F64CCE2C2061D4AE00B38BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */; };
+		F64CCE312061D4AE00B38BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */; };
+		F64CCE332061D4AE00B38BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE322061D4AE00B38BD0 /* Assets.xcassets */; };
+		F64CCE362061D4AE00B38BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */; };
+		F6CE74A12061C008001F5C80 /* MovedIndexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F61CE606205BDE1C00677786;
 			remoteInfo = Differentiator;
+		};
+		F64CCE3D2061D4AE00B38BD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F61CE5FE205BDE1C00677786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F64CCE282061D4AE00B38BD0;
+			remoteInfo = DifferentiatorDemo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +49,16 @@
 		F61CE617205BDE1D00677786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61CE622205BDE9300677786 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDifferentiator.swift; sourceTree = "<group>"; };
+		F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDifferencesTest.swift; sourceTree = "<group>"; };
+		F64CCE292061D4AE00B38BD0 /* DifferentiatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DifferentiatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F64CCE302061D4AE00B38BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F64CCE322061D4AE00B38BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F64CCE352061D4AE00B38BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F64CCE372061D4AE00B38BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64CCE3C2061D4AE00B38BD0 /* DifferentiatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferentiatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F64CCE422061D4AE00B38BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovedIndexesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F64CCE262061D4AE00B38BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64CCE392061D4AE00B38BD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +109,8 @@
 			children = (
 				F61CE609205BDE1C00677786 /* Differentiator */,
 				F61CE614205BDE1D00677786 /* DifferentiatorTests */,
+				F64CCE2A2061D4AE00B38BD0 /* DifferentiatorDemo */,
+				F64CCE3F2061D4AE00B38BD0 /* DifferentiatorDemoTests */,
 				F61CE608205BDE1C00677786 /* Products */,
 				F6097DE3205C341C00CA3AC3 /* Frameworks */,
 			);
@@ -82,6 +121,8 @@
 			children = (
 				F61CE607205BDE1C00677786 /* Differentiator.framework */,
 				F61CE610205BDE1D00677786 /* DifferentiatorTests.xctest */,
+				F64CCE292061D4AE00B38BD0 /* DifferentiatorDemo.app */,
+				F64CCE3C2061D4AE00B38BD0 /* DifferentiatorDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,8 +143,30 @@
 			children = (
 				F61CE617205BDE1D00677786 /* Info.plist */,
 				F6097DE1205C306000CA3AC3 /* IndexesForMissingValuesTest.swift */,
+				F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */,
+				F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */,
 			);
 			path = DifferentiatorTests;
+			sourceTree = "<group>";
+		};
+		F64CCE2A2061D4AE00B38BD0 /* DifferentiatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */,
+				F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */,
+				F64CCE322061D4AE00B38BD0 /* Assets.xcassets */,
+				F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */,
+				F64CCE372061D4AE00B38BD0 /* Info.plist */,
+			);
+			path = DifferentiatorDemo;
+			sourceTree = "<group>";
+		};
+		F64CCE3F2061D4AE00B38BD0 /* DifferentiatorDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F64CCE422061D4AE00B38BD0 /* Info.plist */,
+			);
+			path = DifferentiatorDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +222,41 @@
 			productReference = F61CE610205BDE1D00677786 /* DifferentiatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F64CCE282061D4AE00B38BD0 /* DifferentiatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64CCE432061D4AE00B38BD0 /* Build configuration list for PBXNativeTarget "DifferentiatorDemo" */;
+			buildPhases = (
+				F64CCE252061D4AE00B38BD0 /* Sources */,
+				F64CCE262061D4AE00B38BD0 /* Frameworks */,
+				F64CCE272061D4AE00B38BD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DifferentiatorDemo;
+			productName = DifferentiatorDemo;
+			productReference = F64CCE292061D4AE00B38BD0 /* DifferentiatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F64CCE3B2061D4AE00B38BD0 /* DifferentiatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F64CCE462061D4AE00B38BD0 /* Build configuration list for PBXNativeTarget "DifferentiatorDemoTests" */;
+			buildPhases = (
+				F64CCE382061D4AE00B38BD0 /* Sources */,
+				F64CCE392061D4AE00B38BD0 /* Frameworks */,
+				F64CCE3A2061D4AE00B38BD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F64CCE3E2061D4AE00B38BD0 /* PBXTargetDependency */,
+			);
+			name = DifferentiatorDemoTests;
+			productName = DifferentiatorDemoTests;
+			productReference = F64CCE3C2061D4AE00B38BD0 /* DifferentiatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +277,15 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
+					F64CCE282061D4AE00B38BD0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F64CCE3B2061D4AE00B38BD0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F64CCE282061D4AE00B38BD0;
+					};
 				};
 			};
 			buildConfigurationList = F61CE601205BDE1C00677786 /* Build configuration list for PBXProject "Differentiator" */;
@@ -187,6 +294,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F61CE5FD205BDE1C00677786;
 			productRefGroup = F61CE608205BDE1C00677786 /* Products */;
@@ -195,6 +303,8 @@
 			targets = (
 				F61CE606205BDE1C00677786 /* Differentiator */,
 				F61CE60F205BDE1D00677786 /* DifferentiatorTests */,
+				F64CCE282061D4AE00B38BD0 /* DifferentiatorDemo */,
+				F64CCE3B2061D4AE00B38BD0 /* DifferentiatorDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +318,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F61CE60E205BDE1D00677786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64CCE272061D4AE00B38BD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64CCE362061D4AE00B38BD0 /* LaunchScreen.storyboard in Resources */,
+				F64CCE332061D4AE00B38BD0 /* Assets.xcassets in Resources */,
+				F64CCE312061D4AE00B38BD0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64CCE3A2061D4AE00B38BD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,7 +405,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6CE74A12061C008001F5C80 /* MovedIndexesTest.swift in Sources */,
+				F64CCE242061CF5900B38BD0 /* CalculateDifferencesTest.swift in Sources */,
 				F6097DE2205C306000CA3AC3 /* IndexesForMissingValuesTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64CCE252061D4AE00B38BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64CCE2C2061D4AE00B38BD0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64CCE382061D4AE00B38BD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +434,31 @@
 			target = F61CE606205BDE1C00677786 /* Differentiator */;
 			targetProxy = F61CE612205BDE1D00677786 /* PBXContainerItemProxy */;
 		};
+		F64CCE3E2061D4AE00B38BD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F64CCE282061D4AE00B38BD0 /* DifferentiatorDemo */;
+			targetProxy = F64CCE3D2061D4AE00B38BD0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64CCE302061D4AE00B38BD0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F64CCE352061D4AE00B38BD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F61CE619205BDE1D00677786 /* Debug */ = {
@@ -502,6 +670,70 @@
 			};
 			name = Release;
 		};
+		F64CCE442061D4AE00B38BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = DifferentiatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F64CCE452061D4AE00B38BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = DifferentiatorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F64CCE472061D4AE00B38BD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = DifferentiatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferentiatorDemo.app/DifferentiatorDemo";
+			};
+			name = Debug;
+		};
+		F64CCE482061D4AE00B38BD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MDX989Y6D8;
+				INFOPLIST_FILE = DifferentiatorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DifferentiatorDemo.app/DifferentiatorDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -528,6 +760,24 @@
 			buildConfigurations = (
 				F61CE61F205BDE1D00677786 /* Debug */,
 				F61CE620205BDE1D00677786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64CCE432061D4AE00B38BD0 /* Build configuration list for PBXNativeTarget "DifferentiatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64CCE442061D4AE00B38BD0 /* Debug */,
+				F64CCE452061D4AE00B38BD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F64CCE462061D4AE00B38BD0 /* Build configuration list for PBXNativeTarget "DifferentiatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F64CCE472061D4AE00B38BD0 /* Debug */,
+				F64CCE482061D4AE00B38BD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
