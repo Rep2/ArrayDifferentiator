@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        window?.rootViewController = UINavigationController()
+        window?.rootViewController = UINavigationController(rootViewController: ChangeTableViewController(style: .grouped))
         window?.makeKeyAndVisible()
 
         return true

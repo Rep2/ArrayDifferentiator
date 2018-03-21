@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F6097DE2205C306000CA3AC3 /* IndexesForMissingValuesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6097DE1205C306000CA3AC3 /* IndexesForMissingValuesTest.swift */; };
-		F6097DE5205C341D00CA3AC3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6097DE4205C341D00CA3AC3 /* Nimble.framework */; };
 		F6097DEA205C380700CA3AC3 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6097DE4205C341D00CA3AC3 /* Nimble.framework */; };
 		F61CE611205BDE1D00677786 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
 		F61CE618205BDE1D00677786 /* Differentiator.h in Headers */ = {isa = PBXBuildFile; fileRef = F61CE60A205BDE1C00677786 /* Differentiator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,9 +15,13 @@
 		F61CE625205BE8A600677786 /* ArrayDifferentiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */; };
 		F64CCE242061CF5900B38BD0 /* CalculateDifferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */; };
 		F64CCE2C2061D4AE00B38BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */; };
-		F64CCE312061D4AE00B38BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */; };
 		F64CCE332061D4AE00B38BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE322061D4AE00B38BD0 /* Assets.xcassets */; };
 		F64CCE362061D4AE00B38BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */; };
+		F64CCE4A2061D72700B38BD0 /* ChangeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE492061D72700B38BD0 /* ChangeTableViewController.swift */; };
+		F64CCE4C2061D7AD00B38BD0 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE4B2061D7AD00B38BD0 /* NumberTableViewCell.swift */; };
+		F64CCE502061D84000B38BD0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64CCE4F2061D84000B38BD0 /* SnapKit.framework */; };
+		F64CCE522061D8EB00B38BD0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */; };
+		F64CCE542061E1A100B38BD0 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
 		F6CE74A12061C008001F5C80 /* MovedIndexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +55,15 @@
 		F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDifferencesTest.swift; sourceTree = "<group>"; };
 		F64CCE292061D4AE00B38BD0 /* DifferentiatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DifferentiatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F64CCE302061D4AE00B38BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F64CCE322061D4AE00B38BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F64CCE352061D4AE00B38BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F64CCE372061D4AE00B38BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64CCE3C2061D4AE00B38BD0 /* DifferentiatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferentiatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64CCE422061D4AE00B38BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64CCE492061D72700B38BD0 /* ChangeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeTableViewController.swift; sourceTree = "<group>"; };
+		F64CCE4B2061D7AD00B38BD0 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
+		F64CCE4F2061D84000B38BD0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovedIndexesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6097DE5205C341D00CA3AC3 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64CCE542061E1A100B38BD0 /* Differentiator.framework in Frameworks */,
+				F64CCE502061D84000B38BD0 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +106,7 @@
 		F6097DE3205C341C00CA3AC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F64CCE4F2061D84000B38BD0 /* SnapKit.framework */,
 				F6097DE4205C341D00CA3AC3 /* Nimble.framework */,
 			);
 			name = Frameworks;
@@ -153,10 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */,
-				F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */,
 				F64CCE322061D4AE00B38BD0 /* Assets.xcassets */,
 				F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */,
 				F64CCE372061D4AE00B38BD0 /* Info.plist */,
+				F64CCE492061D72700B38BD0 /* ChangeTableViewController.swift */,
+				F64CCE4B2061D7AD00B38BD0 /* NumberTableViewCell.swift */,
+				F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */,
 			);
 			path = DifferentiatorDemo;
 			sourceTree = "<group>";
@@ -229,6 +239,8 @@
 				F64CCE252061D4AE00B38BD0 /* Sources */,
 				F64CCE262061D4AE00B38BD0 /* Frameworks */,
 				F64CCE272061D4AE00B38BD0 /* Resources */,
+				F64CCE4D2061D80F00B38BD0 /* Swiftlint */,
+				F64CCE4E2061D81E00B38BD0 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -330,7 +342,6 @@
 			files = (
 				F64CCE362061D4AE00B38BD0 /* LaunchScreen.storyboard in Resources */,
 				F64CCE332061D4AE00B38BD0 /* Assets.xcassets in Resources */,
-				F64CCE312061D4AE00B38BD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +400,35 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		F64CCE4D2061D80F00B38BD0 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		F64CCE4E2061D81E00B38BD0 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -415,7 +455,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64CCE4A2061D72700B38BD0 /* ChangeTableViewController.swift in Sources */,
+				F64CCE522061D8EB00B38BD0 /* UITableViewCell.swift in Sources */,
 				F64CCE2C2061D4AE00B38BD0 /* AppDelegate.swift in Sources */,
+				F64CCE4C2061D7AD00B38BD0 /* NumberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,14 +485,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F64CCE2F2061D4AE00B38BD0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F64CCE302061D4AE00B38BD0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F64CCE342061D4AE00B38BD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -676,6 +711,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferentiatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemo";
@@ -691,6 +730,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDX989Y6D8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DifferentiatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.blue-tail-labs.DifferentiatorDemo";

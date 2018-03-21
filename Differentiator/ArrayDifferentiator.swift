@@ -1,5 +1,5 @@
-class ArrayDifferentiator {
-    static func callculateDifference<T: Equatable>(initialValues: [T], finalValues: [T]) -> ArrayDifference {
+public class ArrayDifferentiator {
+    public static func callculateDifference<T: Equatable>(initialValues: [T], finalValues: [T]) -> ArrayDifference {
         let removedIndexes = finalValues.indexesForMissingValues(comparedTo: initialValues)
         let addedIndexes = initialValues.indexesForMissingValues(comparedTo: finalValues)
 
@@ -15,9 +15,9 @@ class ArrayDifferentiator {
     }
 }
 
-struct Change<T> {
-    let from: T
-    let to: T
+public struct Change<T> {
+    public let from: T
+    public let to: T
 }
 
 extension Change where T: Equatable {
@@ -27,10 +27,10 @@ extension Change where T: Equatable {
     }
 }
 
-struct ArrayDifference {
-    let added: [Int]
-    let removed: [Int]
-    let moved: [Change<Int>]
+public struct ArrayDifference {
+    public let added: [Int]
+    public let removed: [Int]
+    public let moved: [Change<Int>]
 }
 
 extension Array where Element: Equatable {

@@ -1,1 +1,2 @@
 github "Quick/Nimble" "v7.0.3"
+github "SnapKit/SnapKit" "4.0.0"
