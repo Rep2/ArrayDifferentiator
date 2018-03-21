@@ -22,6 +22,7 @@
 		F64CCE502061D84000B38BD0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64CCE4F2061D84000B38BD0 /* SnapKit.framework */; };
 		F64CCE522061D8EB00B38BD0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */; };
 		F64CCE542061E1A100B38BD0 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
+		F64CCE562061E36B00B38BD0 /* UITableView+BatchUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */; };
 		F6CE74A12061C008001F5C80 /* MovedIndexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		F64CCE4B2061D7AD00B38BD0 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
 		F64CCE4F2061D84000B38BD0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
+		F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+BatchUpdates.swift"; sourceTree = "<group>"; };
 		F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovedIndexesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				F61CE60B205BDE1C00677786 /* Info.plist */,
 				F61CE622205BDE9300677786 /* Identifiable.swift */,
 				F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */,
+				F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */,
 			);
 			path = Differentiator;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61CE623205BDE9300677786 /* Identifiable.swift in Sources */,
+				F64CCE562061E36B00B38BD0 /* UITableView+BatchUpdates.swift in Sources */,
 				F61CE625205BE8A600677786 /* ArrayDifferentiator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

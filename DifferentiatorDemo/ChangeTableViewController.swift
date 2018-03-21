@@ -2,34 +2,34 @@ import UIKit
 import Differentiator
 
 class ChangeTableViewController: UITableViewController {
-    var data = [0, 1, 2, 3, 4, 5, 6]
+    var data = [
+        [0, 1, 2, 3, 4, 5, 6],
+        [0, 3, 4, 6, 5]
+    ]
+
+    var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(ChangeTableViewController.topRightBarButtonItemTapped))
+        navigationItem.leftBarButtonItems = [
+            UIBarButtonItem(title: "Random", style: .plain, target: self, action: #selector(ChangeTableViewController.randomBarButtonItemTapped))
+        ]
 
         tableView.registerCell(type: NumberTableViewCell.self)
     }
 
     @objc
-    func topRightBarButtonItemTapped() {
-        let index = Int(arc4random()) % data.count
-        let number = data.count
+    func randomBarButtonItemTapped() {
+        let newIndex = (index + 1) % data.count
 
-        let oldData = data
-        data.insert(number, at: index)
+        var changes = ArrayDifferentiator.callculateDifference(initialValues: data[index], finalValues: data[newIndex])
 
-        let changes = ArrayDifferentiator.callculateDifference(initialValues: oldData, finalValues: data)
+        changes = ArrayDifference(added: changes.added, removed: changes.removed, moved: [Change(from: 5, to: 4), Change(from: 6, to: 3)])
 
-        tableView.performBatchUpdates({
-            tableView.insertRows(at: changes.added.map { IndexPath(row: $0, section: 0) }, with: .fade)
-            tableView.deleteRows(at: changes.removed.map { IndexPath(row: $0, section: 0) }, with: .fade)
+        index = newIndex
 
-            changes.moved.forEach {
-                tableView.moveRow(at: IndexPath(row: $0.from, section: 0), to: IndexPath(row: $0.to, section: 0))
-            }
-        })
+        tableView.performBatchUpdates(arrayDifference: changes)
     }
 }
 
@@ -37,13 +37,13 @@ extension ChangeTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.cell(for: indexPath) as NumberTableViewCell
 
-        cell.present(text: "\(data[indexPath.row])")
+        cell.present(text: "\(data[index][indexPath.row])")
 
         return cell
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return data[index].count
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -3,13 +3,7 @@ public class ArrayDifferentiator {
         let removedIndexes = finalValues.indexesForMissingValues(comparedTo: initialValues)
         let addedIndexes = initialValues.indexesForMissingValues(comparedTo: finalValues)
 
-        var updatedInitialValues = initialValues.removed(at: removedIndexes)
-
-        addedIndexes
-            .sorted { $0 < $1 }
-            .forEach { updatedInitialValues.insert(finalValues[$0], at: $0) }
-
-        let movedIndexes = finalValues.indexesForMovedValues(comparedTo: updatedInitialValues)
+        let movedIndexes = finalValues.indexesForMovedValues(comparedTo: initialValues)
 
         return ArrayDifference(added: addedIndexes, removed: removedIndexes, moved: movedIndexes)
     }
@@ -18,6 +12,11 @@ public class ArrayDifferentiator {
 public struct Change<T> {
     public let from: T
     public let to: T
+
+    public init(from: T, to: T) {
+        self.from = from
+        self.to = to
+    }
 }
 
 extension Change where T: Equatable {
@@ -31,6 +30,13 @@ public struct ArrayDifference {
     public let added: [Int]
     public let removed: [Int]
     public let moved: [Change<Int>]
+
+    public init(added: [Int], removed: [Int], moved: [Change<Int>]) {
+        self.added = added
+        self.removed = removed
+        self.moved = moved
+    }
+
 }
 
 extension Array where Element: Equatable {
