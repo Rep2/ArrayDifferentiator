@@ -4,7 +4,11 @@ import Differentiator
 class ChangeTableViewController: UITableViewController {
     var data = [
         [0, 1, 2, 3, 4, 5, 6],
-        [0, 3, 4, 6, 5]
+        [0, 3, 4, 6, 5],
+        [1, 1, 4, 0, 3, 3, 4, 6, 5],
+        [1, 0, 7, 3, 4, 6, 5],
+        [0, 3, 4, 6, 5],
+        [0, 4, 3, 6, 7, 5]
     ]
 
     var index = 0
@@ -23,9 +27,7 @@ class ChangeTableViewController: UITableViewController {
     func randomBarButtonItemTapped() {
         let newIndex = (index + 1) % data.count
 
-        var changes = ArrayDifferentiator.callculateDifference(initialValues: data[index], finalValues: data[newIndex])
-
-        changes = ArrayDifference(added: changes.added, removed: changes.removed, moved: [Change(from: 5, to: 4), Change(from: 6, to: 3)])
+        let changes = data[newIndex].difference(comparedTo: data[index])
 
         index = newIndex
 

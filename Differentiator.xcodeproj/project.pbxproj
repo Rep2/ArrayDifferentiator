@@ -12,7 +12,7 @@
 		F61CE611205BDE1D00677786 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
 		F61CE618205BDE1D00677786 /* Differentiator.h in Headers */ = {isa = PBXBuildFile; fileRef = F61CE60A205BDE1C00677786 /* Differentiator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F61CE623205BDE9300677786 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE622205BDE9300677786 /* Identifiable.swift */; };
-		F61CE625205BE8A600677786 /* ArrayDifferentiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */; };
+		F61CE625205BE8A600677786 /* Array+CallculateDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61CE624205BE8A600677786 /* Array+CallculateDifference.swift */; };
 		F64CCE242061CF5900B38BD0 /* CalculateDifferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */; };
 		F64CCE2C2061D4AE00B38BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */; };
 		F64CCE332061D4AE00B38BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F64CCE322061D4AE00B38BD0 /* Assets.xcassets */; };
@@ -22,7 +22,9 @@
 		F64CCE502061D84000B38BD0 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64CCE4F2061D84000B38BD0 /* SnapKit.framework */; };
 		F64CCE522061D8EB00B38BD0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */; };
 		F64CCE542061E1A100B38BD0 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61CE607205BDE1C00677786 /* Differentiator.framework */; };
-		F64CCE562061E36B00B38BD0 /* UITableView+BatchUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */; };
+		F64CCE562061E36B00B38BD0 /* UITableView+ArrayDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE552061E36B00B38BD0 /* UITableView+ArrayDifference.swift */; };
+		F64CCE582062578E00B38BD0 /* ArrayDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE572062578E00B38BD0 /* ArrayDifference.swift */; };
+		F64CCE5A206257A300B38BD0 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64CCE59206257A300B38BD0 /* Change.swift */; };
 		F6CE74A12061C008001F5C80 /* MovedIndexesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,7 @@
 		F61CE610205BDE1D00677786 /* DifferentiatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DifferentiatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61CE617205BDE1D00677786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F61CE622205BDE9300677786 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
-		F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDifferentiator.swift; sourceTree = "<group>"; };
+		F61CE624205BE8A600677786 /* Array+CallculateDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CallculateDifference.swift"; sourceTree = "<group>"; };
 		F64CCE232061CF5900B38BD0 /* CalculateDifferencesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDifferencesTest.swift; sourceTree = "<group>"; };
 		F64CCE292061D4AE00B38BD0 /* DifferentiatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DifferentiatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64CCE2B2061D4AE00B38BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,9 @@
 		F64CCE4B2061D7AD00B38BD0 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
 		F64CCE4F2061D84000B38BD0 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		F64CCE512061D8EB00B38BD0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
-		F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+BatchUpdates.swift"; sourceTree = "<group>"; };
+		F64CCE552061E36B00B38BD0 /* UITableView+ArrayDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ArrayDifference.swift"; sourceTree = "<group>"; };
+		F64CCE572062578E00B38BD0 /* ArrayDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDifference.swift; sourceTree = "<group>"; };
+		F64CCE59206257A300B38BD0 /* Change.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		F6CE74A02061C008001F5C80 /* MovedIndexesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovedIndexesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,8 +147,10 @@
 				F61CE60A205BDE1C00677786 /* Differentiator.h */,
 				F61CE60B205BDE1C00677786 /* Info.plist */,
 				F61CE622205BDE9300677786 /* Identifiable.swift */,
-				F61CE624205BE8A600677786 /* ArrayDifferentiator.swift */,
-				F64CCE552061E36B00B38BD0 /* UITableView+BatchUpdates.swift */,
+				F61CE624205BE8A600677786 /* Array+CallculateDifference.swift */,
+				F64CCE552061E36B00B38BD0 /* UITableView+ArrayDifference.swift */,
+				F64CCE572062578E00B38BD0 /* ArrayDifference.swift */,
+				F64CCE59206257A300B38BD0 /* Change.swift */,
 			);
 			path = Differentiator;
 			sourceTree = "<group>";
@@ -440,8 +446,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F61CE623205BDE9300677786 /* Identifiable.swift in Sources */,
-				F64CCE562061E36B00B38BD0 /* UITableView+BatchUpdates.swift in Sources */,
-				F61CE625205BE8A600677786 /* ArrayDifferentiator.swift in Sources */,
+				F64CCE5A206257A300B38BD0 /* Change.swift in Sources */,
+				F64CCE562061E36B00B38BD0 /* UITableView+ArrayDifference.swift in Sources */,
+				F64CCE582062578E00B38BD0 /* ArrayDifference.swift in Sources */,
+				F61CE625205BE8A600677786 /* Array+CallculateDifference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

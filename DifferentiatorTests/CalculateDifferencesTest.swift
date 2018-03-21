@@ -7,10 +7,10 @@ class CalculateDifferencesTest: XCTestCase {
         let initial = [0, 1, 2, 3]
         let final = [3, 4, 1, 5]
 
-        let arrayDifferences = ArrayDifferentiator.callculateDifference(initialValues: initial, finalValues: final)
+        let arrayDifferences = final.difference(comparedTo: initial)
 
-        expect(arrayDifferences.added) == [1, 3]
-        expect(arrayDifferences.removed) == [0, 2]
+        expect(arrayDifferences.addedAt) == [1, 3]
+        expect(arrayDifferences.removedAt) == [0, 2]
 
         expect(arrayDifferences.moved.count) == 2
         expect(arrayDifferences.moved[0].from) == 1
@@ -23,9 +23,9 @@ class CalculateDifferencesTest: XCTestCase {
         let initial = [0, 1, 2, 3, 4, 5, 6]
         let final = [0, 3, 4, 6, 5]
 
-        let arrayDifferences = ArrayDifferentiator.callculateDifference(initialValues: initial, finalValues: final)
+        let arrayDifferences = final.difference(comparedTo: initial)
 
-        expect(arrayDifferences.removed) == [1, 2]
+        expect(arrayDifferences.removedAt) == [1, 2]
 
         expect(arrayDifferences.moved.count) == 4
         expect(arrayDifferences.moved[0].from) == 3
